@@ -35,9 +35,6 @@ void setup() {
   delay(1000);
 }
 
-
-
-
 void loop(){
 
 int thisnote = A3;
@@ -74,10 +71,6 @@ int thisnote = A3;
       client.print(data4); 
 	}
           }
-
-
-	 
-
 	if (client.connected()) { 
 		client.stop();	// DISCONNECT FROM THE SERVER
 	}
