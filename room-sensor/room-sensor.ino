@@ -60,7 +60,7 @@ int thisnote = A3;
           h = dht.readHumidity();
           t = dht.readTemperature();
           
-          data4 = "temp="+(String)t+"&hum="+(String)h+"&lighting="+(String)val+"&location=B1300";
+          data4 = "temp="+(String)t+"&hum="+(String)h+"&lighting="+(String)val+"&location=9aa374ab";
 
           if(val!=0){
             Serial.println(data4);
