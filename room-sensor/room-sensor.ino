@@ -57,9 +57,9 @@ int thisnote = A3;
           h = dht.readHumidity();
           t = dht.readTemperature();
           
-          data4 = "temp="+(String)t+"&hum="+(String)h+"&lighting="+(String)val+"&location=9aa374ab";
-
-          if(val!=0){
+          data4 = "temp="+(String)t+"&hum="+(String)h+"&lighting="+(String)val+"&location=輸入ID";
+          Serial.println(val);
+          if(t!=0){
             Serial.println(data4);
             if(client.connect("app.itlab.tw",80)){
         client.println("POST /app/arduino/sensor/ HTTP/1.1"); 
@@ -75,6 +75,6 @@ int thisnote = A3;
 		client.stop();	// DISCONNECT FROM THE SERVER
 	}
 
-	delay(10000); // WAIT FIVE MINUTES BEFORE SENDING AGAIN
+	delay(2780); // WAIT FIVE MINUTES BEFORE SENDING AGAIN
 }
 
